@@ -3,8 +3,10 @@ from nltk.stem import WordNetLemmatizer
 import json
 import numpy as np
 
+# Download necessary NLTK resources
 nltk.download('punkt')
 nltk.download('wordnet')
+nltk.download('punkt_tab')  # Download punkt_tab without 'tokenizers/' prefix
 
 lemmatizer = WordNetLemmatizer()
 
